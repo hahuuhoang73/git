@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+ 
+  background: rgb(226,157,157);
+}
+.card {
+  width: 640px;
+  height: 400px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+  transition: 1s;
+}
+.card:hover {
+  transform: rotate(-5deg);
+}
+.card:hover .outside {
+  transform: rotateY(-170deg);
+}
+.outside,
+.inside {
+  height: 100%;
+  width: 75%;
+  position: absolute;
+  left: 50.1%;
+  border:3px solid #F0E68C ;
+}
+.inside {
+  background: #e60023;
+ 
+  line-height: 3;
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  left: 50%;
+}
+.outside {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  z-index: 1;
+  transform-origin: left;
+  transition: 2s;
+  cursor: pointer;
+}
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+}
+.front {
+  background-color: rgb(255, 245, 53);
+}
+.back {
+  transform: rotateY(180deg);
+  background-color: #e60023;
+}
+.cake {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+}
+.top-layer,
+.middle-layer,
+.bottom-layer {
+  height: 80px;
+  width: 240px;
+  background-repeat: repeat;
+  background-size: 60px 100px;
+  background-position: 28px 0;
+  background-image: linear-gradient(
+      transparent 50px,
+      #fedbab 50px,
+      #fedbab 60px,
+      transparent 60px
+    ),
+    radial-gradient(circle at 30px 5px,
+     #994c10 30px, #fcbf29 31px);
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  margin: auto;
+}
+.middle-layer {
+  transform: scale(0.85);
+  top: 6px;
+}
+.top-layer {
+  transform: scale(0.7);
+  top: 26px;
+}
+.candle {
+  height: 45px;
+  width: 15px;
+  background: repeating-linear-gradient(
+    45deg,
+    #fd3018 0,
+    #fd3018 5px,
+    #ffa89e 5px,
+    #ffa89e 10px
+  );
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 202px;
+}
+.candle:before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background-color: #ffa500;
+  border-radius: 0 50% 50% 50%;
+  bottom: 48px;
+  transform: rotate(45deg);
+  left: -1px;
+}
+.outside p {
+  font-family: 'Rubik Bubbles', cursive;
+  font-size: xxx-;
+  text-transform: uppercase;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 6px;
+color: #fd3018;
+}
+.inside p {
+  color: #F0E68C;
+  line-height: 30px;
+  font-size: 19px;
+  position: relative;
+  top: -22px;
+  
+}
+.inside h1 {
+  color: #F0E68C;
+    line-height: 30px;
+    position: relative;
+    top: 15px;
+}
+   
+ 
+ .inside img{
+ width: 200px;
+ position: relative;
+    left: 0px;
+   
+ }
+ .so{display: flex;}
+ .so h1.mot{
+  position: relative;
+    top: 96px;
+    font-size: 150px;
+    left: 6px
+ }
+ .so h1.hai{
+  position: relative;
+  top: 90px;
+  font-size: 150px;
+  left: -10px;
+
+ }
+ .back{
+  text-align: center;
+ }
+ .time .item {
+  position: relative;
+  /* background-image: repeating-linear-gradient(to left bottom,#e9e9cf 0px,#f2f4d9 1px,transparent 5px,transparent 1px); */
+
+}
+.time .item{
+ 
+/* background-image: repeating-linear-gradient(to left bottom,#f0f09b 0px,#f3f8a4 1px,transparent 5px,transparent 1px); */
+animation: show 2s linear infinite ;
+}
+
+@keyframes show{
+
+  0%{
+    background: #f9ff42;
+
+  }
+  50%{
+    background: #f727c3;
+  }
+ 
+  100%{
+background: #0bf5c6;
+  }
+}
+.time{
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  column-gap: 10px;
+  grid-template-rows: 100px;
+  position: relative;
+    top: 120px;
+    left: 20px;
+}
+#day,
+#hour,
+#minute,#seconds{
+  color: #480a03;
+    font-size: xxx-large;
+    font-weight: bold;
+
+
+}
+.tem1{
+  color: #e24a4a;
+ background: wheat;
+  font-weight: 900;
+font-size: 20px;
+
+}
+.back h1{
+  position: relative;
+    font-size: 38px;
+    font-family: 'Dancing Script', cursive;
+    top: 105px;
+    color: #F0E68C;;
+}
+.back h1 i{
+  position: relative;
+    top: 15px;
+}
+.time  .chuki img{
+  width: 135px;
+  position: relative;
+  left: 316px;
+  top: 38px;
+}
+.back img{
+  position: absolute;
+    width: 160px;
+    top: -19px;
+    left: 314px;
+}
+.quadua img{
+  top: 105px;
+    left: -24px;
+}
+.phaohoa img{
+  top: 51px;
+    left: 0px;
+    width: 20px;
+    animation: phao 2s linear infinite ;
+}
+.phaohoa1 img{
+  top: 84px;
+    left: 112px;
+    width: 80px;
+    animation: phao 2s linear infinite ;
+}
+.phaohoa2 img{
+  top: 32px;
+  left: 224px;
+  width: 80px;
+    animation: phao 2s linear infinite ;
+}
+@keyframes phao{
+
+  0%{
+   width: 20px;
+
+  }
+  50%{
+    width: 53px;
+  }
+ 
+  100%{
+width: 123;
+  }
+}

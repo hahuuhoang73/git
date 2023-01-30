@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    .sidebar{
+      width: 220px;
+      margin-left: 0;
+      background-color: rgb(241, 241, 241);
+    }
+    .icon p a{
+      color: #000;
+    }
+    .menu .main a{
+      color: #000;
+    }
+    .menu .main li{
+      line-height: 49.2px;
+      list-style: none;
+      padding: 1px  45px;
+    }
+    .menu .main li:hover{
+      background: rgb(0, 132, 255);
+      width: 220px;
+      color: #fff;
+    }
+    .main .active {
+      background: rgb(0, 132, 255);
+      color: #fff;
+    }
+    .content{
+      border: 0.1px solid #949494;
+      height: 84px;
+    }
+    .main-items{
+      margin: 14px 0;
+    }
+    .icon-items i{
+      width: 50px;
+      padding: 10px 10px;
+      font-size: 30px;
+      background-color: rgb(190, 190, 190);
+      color: #3d3c3c;
+      border-radius: 50%;
+      margin: 0 15px;
+      float: left;
+      height: 50px;
+    }
+    .item p{
+      float: left;
+      margin: 0 30px;
+    }
+    .txt{
+      color: #949494;
+    }
+    .all{
+      margin: -420px 220px;
+    }
+  </style>
+</head>
+<body>
+<div class="sidebar">
+  <div class="icon">
+    <p><a href="#"><i class='bx bx-chevron-down'></i>Favorites</a></p>
+  </div>
+  <div class="menu">
+    <ul class="main">
+      <a href="#"><li>Inbox</li></a>
+      <a href="#"><li class="active">Sent Items</li></a>
+    </ul>
+  </div>
+  <div class="icon">
+    <p><a href="#"><i class='bx bx-chevron-down'></i>John</a></p>
+  </div>
+  <div class="menu">
+    <ul class="main">
+      <a href="#"><li>Inbox</li></a>
+      <a href="#"><li>Drafts</li></a>
+      <a href="#"><li>Deleted Items</li></a>
+      <a href="#"><li>Sent Items</li></a>
+      <a href="#"><li>Outbox</li></a>
+    </ul>
+  </div>
+</div>
+<div class="all">
+<div class="content">
+  <div class="main-items">
+  <div class="icon-items">
+    <i class='bx bxs-user' ></i>
+  </div>
+  <div class="items">
+    <p>{{Name1}}</p>
+    <p class="txt">{{Dc1}}</p>
+    <p>{{Text1}}</p>
+  </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="main-items">
+  <div class="icon-items">
+    <i class='bx bxs-user' ></i>
+  </div>
+  <div class="items">
+    <p>{{Name2}}</p>
+    <p class="txt">{{Dc2}}</p>
+    <p>{{Text2}}</p>
+  </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="main-items">
+  <div class="icon-items">
+    <i class='bx bxs-user' ></i>
+  </div>
+  <div class="items">
+    <p>{{Name3}}</p>
+    <p class="txt">{{Dc3}}</p>
+    <p>{{Text3}}</p>
+  </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="main-items">
+  <div class="icon-items">
+    <i class='bx bxs-user' ></i>
+  </div>
+  <div class="items">
+    <p>{{Name4}}</p>
+    <p class="txt">{{Dc4}}</p>
+    <p>{{Text4}}</p>
+  </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="main-items">
+  <div class="icon-items">
+    <i class='bx bxs-user' ></i>
+  </div>
+  <div class="items">
+    <p>{{Name5}}</p>
+    <p class="txt">{{Dc5}}</p>
+    <p>{{Text5}}</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

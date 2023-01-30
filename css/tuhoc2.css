@@ -1,0 +1,30 @@
+.pin{
+    border: 2px solid black;
+    width: 100%;
+    height: 150px;
+   
+}
+.chaypin{
+    background: red;
+    width: 100%;
+    height: 150px;
+    animation: chay 2s linear infinite;
+}
+@keyframes chay {
+    0%{
+        width: 0%;
+        background: red;
+    }
+
+
+    100%{
+        width: 100%;  
+        background: green;
+    }
+}
+.pin h1{
+    color: #1d91a5;
+    text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+             0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+             0 0 40px #A5F1FF;
+}
